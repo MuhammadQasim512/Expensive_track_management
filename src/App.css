@@ -1,0 +1,160 @@
+body {
+    overflow: hidden;
+}
+
+.leftside {
+    width: 18.5%;
+    background-color: #e3ebf1;
+    height: 100vh;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .leftside {
+        width: 0;
+    }
+}
+
+.rightside {
+    width: 82.5%;
+    background-color: aliceblue;
+    height: 100vh;
+
+}
+
+@media (max-width: 768px) {
+    .rightside {
+        width: 100%;
+    }
+}
+
+.income {
+    margin-left: 10px;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+.table {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    border-collapse: collapse;
+    overflow-y: auto;
+}
+
+.button1 {
+    border-radius: 5px;
+    background-color: #255e7e;
+    color: white;
+    border: none;
+    height: 30px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.hamburger-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+.custom-sidebar {
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: block;
+    }
+}
+
+.header {
+    background-color: #255e7e;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.signup-box {
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login-box {
+    width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    ;
+    background-color: #fff;
+}
+
+
+.cta-button {
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffaa00;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+
+.expense-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.expense-card {
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
